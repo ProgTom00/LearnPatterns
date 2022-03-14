@@ -14,9 +14,9 @@ public class TaxiOrderTestSuite {
         // Given
         TaxiOrder taxiOrder = new BasicTaxiOrder();
         // When
-        BigDecimal calculatedCost = taxiOrder.getCost();
+        BigDecimal theCost = taxiOrder.getCost();
         // Then
-        assertEquals(new BigDecimal(5), calculatedCost);
+        assertEquals(new BigDecimal(5), theCost);
     }
     @Test
     void testBasicTaxiOrderGetDescription() {
