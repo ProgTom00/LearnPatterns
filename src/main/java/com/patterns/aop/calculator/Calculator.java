@@ -8,6 +8,7 @@ import java.math.BigDecimal;
 @Component
 @EnableAspectJAutoProxy
 public class Calculator {
+
     public double add(double a, double b) {
         return a + b;
     }
@@ -26,6 +27,7 @@ public class Calculator {
         }
         return a / b;
     }
+
     public BigDecimal factorial(BigDecimal n) {
         if (n.compareTo(BigDecimal.ONE) > 0) {
             return n.multiply(factorial(n.subtract(BigDecimal.ONE)));
